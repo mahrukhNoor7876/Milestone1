@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+html{
+    font-size: 1em;
+}
+body{
+    background-color: #FFFFF0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+#page{
+    position: relative;
+    width: 100%;
+    min-height: 1100px;
+    max-width: 950px;
+    margin: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0px 35px 55px rgba(0, 0, 0,0.1);
+}
+.left_side{
+    position: relative;
+    background-color: #ffff;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-right: 1px solid rgb(1, 17, 32);
+}
+.right_side{
+    position: relative;
+    background: #ffff;
+    padding: 40px;
+    padding-top: 70px;
+}
+/* left side designing */
+.left_side .profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left_side h1, h2{
+    color: rgb(1, 17, 32);
+}
+.profile h2{
+    font-size: 1.25em;
+}
+#contact h1{
+    font-size: 1.75rem;
+}
+.fa-solid{
+    color: #03A9F4;
+    font-size: 1.25em;
+    margin-right: 0.25em;
+}
+.fa-brands{
+    color: #03A9F4;
+    font-size: 1.25em;
+    margin-right: 0.25em;
+}
+#contact p{
+    font-size: 1em;
+    color: #000000;
+    line-break: anywhere;
+}
+#education h1{
+    font-size: 1.75em;
+}
+#education p{
+    color: #000000;
+    font-size: 1em;
+}
+#education span{
+    font-size: 1.25em;
+    color: #03A9F4;
+}
+#language h1{
+    font-size: 1.75em;
+}
+#language p{
+    color: #000000;
+    font-size: 1.25em;
+}
+#language .box{
+    height: 7px;
+    width: 90%;
+    background-color: #F2F2F2;
+    box-shadow: 0 5px 5px gray;
+    border-radius: 20px;
+}
+.box .inbox1{
+    height: 100%;
+    width: 70%;
+    background-color: #03A9F4;
+    border-radius: 20px;
+}
+.box .inbox2{
+    height: 100%;
+    width: 80%;
+    background-color: #03A9F4;
+    border-radius: 20px;
+}
+/* right side designing */
+.right_side h1{
+    font-size: 2em;
+    color: rgb(1, 17, 32);
+}
+#profile_content p{
+    text-align: justify;
+    font-size: 1.05em;
+}
+#skills p{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+#skills .box{
+    height: 7px;
+    width: 90%;
+    background-color: #ffff;
+    box-shadow: 0 5px 5px gray;
+    border-radius: 20px;
+}
+#skills .box .inbox1{
+    height: 100%;
+    width: 85%;
+    background-color: #03A9F4;
+    border-radius: 20px;
+}
+#skills .box .inbox2{
+    height: 100%;
+    width: 70%;
+    background-color: #03A9F4;
+    border-radius: 20px;
+}
+#skills .box .inbox3{
+    height: 100%;
+    width: 50%;
+    background-color: #03A9F4;
+    border-radius: 20px;
+}
+#projects ul li{
+    list-style-position: inside;
+    color: #03A9F4;
+    font-size: 1.25em;
+}
+#projects ul li span{
+    color: black;
+}
+button{
+    width: 15%;
+    height: 30px;
+    font-size: 1.25em;
+    background-color: rgb(1, 17, 32);
+    color: white;
+    border: none;
+    transition: all 2s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+button:active{
+    transform: scale(-2.5);
+}
+#experience p{
+    font-size: 1.25em;
+}
+
+/* responsive style*/
+@media screen and (max-width:1000px) {
+    html{
+        font-size: 1em;
+    }
+    #page{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .right_side {
+        padding-top: 0px;
+    }
+    .left_side{
+        padding-bottom: 0px;
+        border-right: none;
+    }
+    #contact p span{
+        padding-left: 0em;
+    }
+}
+@media screen and (max-width:600px) {
+    button{
+        width: 20%;
+        height: 40px;
+    }
+    #experience p{
+        font-size: 1.15em;
+    }
+}
